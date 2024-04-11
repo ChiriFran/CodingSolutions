@@ -456,57 +456,208 @@ body {
 
 /* Nuestros proyectos */
 
+.proyectoTitle {
+  text-align: center;
+  margin-top: 5rem;
+}
+
 #nuestrosProyectos {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 3rem;
+  margin: 6rem 0;
+  gap: 2rem;
 }
 
-#nuestrosProyectos h2 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
-  margin: 3rem 0 2rem 0;
+.card {
+  overflow: visible;
+  width: 300px;
+  height: 400px;
 }
 
-.nuestrosProyectosContainer {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.5rem;
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 600ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
 }
 
-.nuestrosProyectosItem {
+.front,
+.back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
   display: flex;
-  flex-flow: column;
   align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
-.nuestrosProyectosItem a {
-  text-decoration: none;
-  color: var(--colorFont);
+.back::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #f1f6f9,
+    #f1f6f9,
+    #14274e,
+    #14274e,
+    transparent
+  );
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
   display: flex;
-  flex-flow: column;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
-.nuestrosProyectosItem img {
+.back-content img {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+  font-size: 1.2rem;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1;
   max-width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nuestrosProyectosItem h3 {
-  font-size: clamp(0.8rem, 2vw, 1.2rem);
-  margin: 1rem 0 0.5rem 0;
+.title p {
+  width: 50%;
 }
 
-.nuestrosProyectosItem h4 {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
-  color: var(--colorFont);
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 0.8rem;
 }
 
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #9ba4b4;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #14274e;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #394867;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
 /* newletter */
 
 #newsletter {
@@ -1162,14 +1313,8 @@ footer nav ul li:hover {
     height: 35vh;
   }
 
-  .nuestrosProyectosContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .nuestrosProyectosContainer {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+  #nuestrosProyectos {
+    flex-flow: column;
   }
 
   #formContacto {
@@ -1242,7 +1387,7 @@ footer nav ul li:hover {
     margin: 0 0;
   }
 
-  .subscribe{
+  .subscribe {
     display: none;
   }
 }
