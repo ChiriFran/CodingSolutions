@@ -748,7 +748,7 @@ body {
 /* contacto form */
 #formContacto {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-flow: row;
   align-items: flex-start;
