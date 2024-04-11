@@ -90,27 +90,14 @@ body {
 
 .slide-hero {
   padding: 4rem 4rem;
-  background-color: #bec8fa36;
+  background-color: transparent;
   border-radius: 5px;
-  animation: popUp 1s ease-in forwards;
-}
-
-@keyframes popUp {
-  0% {
-    filter: blur(5px);
-    scale: 0.8;
-  }
-  100% {
-    filter: blur(0);
-    scale: 1;
-  }
 }
 
 .slide-hero h1 {
-  font-size: clamp(1rem, 2vw, 4rem);
+  font-size: clamp(1rem, 8vw, 6rem);
   margin: 0 0 4rem 0;
   z-index: 10000;
-  font-size: 5rem;
   font-weight: 800;
   font-style: italic;
   color: var(--colorBase);
@@ -126,29 +113,38 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: tittleAnimation 10s linear infinite;
+  animation: slideTitle 1s ease-in-out;
 }
 
-@keyframes tittleAnimation {
+@keyframes slideTitle {
   0% {
-    background-position: 0% 75%;
-  }
-  50% {
-    background-position: 100% 25%;
+    transform: translateX(-300%);
+    scale: 0.7;
   }
   100% {
-    background-position: 0% 75%;
+    transform: translateX(0);
+    scale: 1;
   }
 }
 
 .slide-hero p {
-  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 600;
   font-style: italic;
   color: var(--colorBase);
-  transition: 0.5s;
+  animation: slideText 1.5s ease-in-out;
 }
 
+@keyframes slideText {
+  0% {
+    transform: translateX(-300%);
+    scale: 0.7;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+  }
+}
 .textoResaltado {
   text-transform: uppercase;
   font-weight: 800;
@@ -465,7 +461,7 @@ body {
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
   margin: 6rem 0;
   gap: 2rem;
@@ -596,6 +592,7 @@ body {
 }
 
 .cardLinks h3 {
+  font-size: clamp(1rem, 2vw, 2rem);
   background: linear-gradient(
     to left,
     var(--colorBase) 35%,
@@ -1177,9 +1174,11 @@ footer nav ul li:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
+
   #mensajeSlider {
     display: none;
   }
@@ -1204,7 +1203,6 @@ footer nav ul li:hover {
   .slide-hero h1 {
     font-size: clamp(1rem, 2vw, 4rem);
     margin: 0 0 8rem 0;
-    font-size: 4rem;
     animation: slideTitle 1s ease-in-out;
   }
 
@@ -1364,7 +1362,9 @@ footer nav ul li:hover {
 
   #avisosContainer {
     width: 80%;
-    height: 35vh;
+    height: 40vh;
+    background-image: url(../media/img/hero/heroMobile1.jpg);
+    background-size: cover;
   }
 
   #nuestrosProyectos {
