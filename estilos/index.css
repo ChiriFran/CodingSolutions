@@ -78,7 +78,7 @@ body {
   height: 100vh;
   padding-bottom: 20vh;
   overflow: hidden;
-  background-image: url(/media/img/hero/hero1.jpg);
+  background-image: url(../media/img/hero/hero1.jpg);
   background-size: cover;
   display: flex;
   flex-flow: column;
@@ -299,9 +299,9 @@ body {
 }
 
 .somosCodingSolutionsContainer {
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
   justify-content: center;
 }
@@ -362,7 +362,7 @@ body {
   height: 80vh;
   margin-bottom: 5rem;
   padding-bottom: 2.5rem;
-  background-image: url("/media/img/hero/hero2.jpg");
+  background-image: url("../media/img/hero/hero2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -441,7 +441,7 @@ body {
   width: 80%;
   padding: 3.5rem 0;
   margin: 1rem 0;
-  background-image: url(/media/img/hero/hero3.jpg);
+  background-image: url(../media/img/hero/hero3.jpg);
 }
 
 #avisosContainer h3 {
@@ -848,7 +848,7 @@ footer nav ul li:hover {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/media/img/hero/hero3.jpg);
+  background-image: url(../media/img/hero/hero3.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
