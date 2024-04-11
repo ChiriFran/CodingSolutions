@@ -715,23 +715,40 @@ body {
   width: 100%;
   height: 70vh;
   display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: url(../media/img/hero/contacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 3rem 3rem;
+}
+
+.contactoOpciones {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--colorBase);
+  display: flex;
   flex-flow: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  background-color: var(--colorFont);
-  padding: 1rem 1rem;
+}
+
+.contactoOpciones p{
+  margin: 0.5rem 0;
+  color: var(--colorWhite);
 }
 
 #formContacto h3 {
-  color: var(--colorBase);
+  color: var(--colorWhite);
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   margin: 2rem 0;
 }
 
 .form-container {
   max-width: 1000px;
-  background: linear-gradient(var(--colorBase), var(--colorBase)) padding-box,
-    linear-gradient(145deg, transparent 35%, var(--colorBase), var(--colorBase))
+  background: linear-gradient( #9ba4b47e, #9ba4b47e) padding-box,
+    linear-gradient(145deg, transparent 75%, #10285099, #102850a1)
       border-box;
   border: 2px solid transparent;
   padding: 32px 24px;
@@ -764,7 +781,7 @@ body {
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: var(--colorFont);
+  color: var(--colorWhite);
   font-weight: 600;
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
@@ -773,10 +790,10 @@ body {
   width: 100%;
   padding: 12px 16px;
   border-radius: 8px;
-  color: var(--colorFont);
+  color: var(--colorBase);
   font-family: inherit;
   background-color: transparent;
-  border: 1px solid var(--colorFont);
+  border: 1px solid var(--colorBase);
 }
 
 .form-container .form-group textarea {
@@ -784,9 +801,9 @@ body {
   padding: 12px 16px;
   border-radius: 8px;
   resize: none;
-  color: var(--colorFont);
+  color: var(--colorBase);
   height: 96px;
-  border: 1px solid var(--colorFont);
+  border: 1px solid var(--colorBase);
   background-color: transparent;
   font-family: inherit;
 }
@@ -797,12 +814,12 @@ body {
 
 .form-container .form-group input:focus {
   outline: none;
-  border-color: var(--colorFont);
+  border-color: var(--colorBase);
 }
 
 .form-container .form-group textarea:focus {
   outline: none;
-  border-color: var(--colorFont);
+  border-color: var(--colorBase);
 }
 
 .form-container .form-submit-btn {
@@ -813,9 +830,9 @@ body {
   font-family: inherit;
   color: var(--colorFont);
   font-weight: 600;
-  width: 40%;
-  background: var(--colorBase);
-  border: 1px solid var(--colorFont);
+  width: 100%;
+  background: #d1d2d421;
+  border: 1px solid var(--colorBase);
   padding: 12px 16px;
   font-size: inherit;
   gap: 8px;
@@ -1304,10 +1321,6 @@ footer nav ul li:hover {
     background-position: left;
   }
 
-  .contactoContainer p {
-    padding: 0 5%;
-  }
-
   #avisosContainer {
     width: 80%;
     height: 35vh;
@@ -1317,8 +1330,18 @@ footer nav ul li:hover {
     flex-flow: column;
   }
 
+  .contactoOpciones {
+    padding: 0 1.4rem;
+  }
+
   #formContacto {
     height: 100vh;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 1rem 1.4rem;
   }
 
   .footer-left nav {
