@@ -113,7 +113,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: slideTitle 1s ease-in-out;
+  animation: slideTitle 1.5s ease-in-out;
 }
 
 @keyframes slideTitle {
@@ -132,7 +132,8 @@ body {
   font-weight: 600;
   font-style: italic;
   color: var(--colorBase);
-  animation: slideText 1.5s ease-in-out;
+  animation: slideText 2.5s ease-in-out;
+  margin: 5rem 20% 0;
 }
 
 @keyframes slideText {
@@ -1201,7 +1202,7 @@ footer nav ul li:hover {
   }
 
   .slide-hero h1 {
-    font-size: clamp(1rem, 2vw, 4rem);
+    font-size: clamp(4rem, 2vw, 6rem);
     margin: 0 0 8rem 0;
     animation: slideTitle 1s ease-in-out;
   }
@@ -1218,7 +1219,7 @@ footer nav ul li:hover {
   }
 
   .slide-hero p {
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
     animation: slideText 1.5s ease-in-out;
   }
 
