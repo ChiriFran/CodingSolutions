@@ -283,7 +283,7 @@ body {
 #somosCodingSolutionsTitlte {
   text-align: center;
   margin-top: 5rem;
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-size: clamp(1.6rem, 2vw, 2rem);
   font-weight: 900;
 }
 
@@ -306,17 +306,17 @@ body {
 }
 
 #somosCodingSolutions h3 {
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-size: clamp(1.6rem, 2vw, 1.8rem);
   margin: 0.5rem 0;
 }
 
 #somosCodingSolutions p {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(1.4rem, 2vw, 1.6rem);
   font-weight: 600;
 }
 
 #somosCodingSolutions h2 {
-  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
   font-weight: 400;
   margin-left: 1rem;
 }
@@ -336,7 +336,7 @@ body {
 }
 
 #somosCodingSolutions p:last-child {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1rem);
   color: var(--colorPrimary);
   margin: 1rem 0;
 }
@@ -1296,18 +1296,28 @@ footer nav ul li:hover {
     flex-flow: column;
   }
 
-  .somosCodingSolutionsItem img {
-    animation: respiracion 5s ease-in-out infinite;
+  .somosCodingSolutionsItem {
+    width: 100%;
   }
 
-  @keyframes respiracion {
-    0%,
-    100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.04);
-    }
+  #somosCodingSolutions h3 {
+    margin: 1rem 0;
+  }
+
+  #somosCodingSolutions p {
+    margin: 1rem 0;
+  }
+
+  #somosCodingSolutions p:last-child {
+    margin-top: 2rem ;
+  }
+
+  #somosCodingSolutions h2 {
+    margin-left: 1rem;
+  }
+
+  .somosCodingSolutionsItem img {
+    display: none;
   }
 
   #somosCodingSolutions {
