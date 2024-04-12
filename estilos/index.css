@@ -726,7 +726,7 @@ body {
 
 .contactoOpciones ul li {
   list-style: none;
-  text-align: center;
+  text-align: start;
 }
 
 .contactoOpciones h2 {
@@ -1405,6 +1405,7 @@ footer nav ul li:hover {
   }
 
   .contactoOpciones ul li {
+    text-align: center;
     margin-left: 0;
   }
 
