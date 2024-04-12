@@ -828,7 +828,7 @@ body {
   background-color: var(--colorFont); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for depth */
-  box-shadow: 0 0 20px rgba(13, 64, 131, 0.7); /* Sun color glow */
+  box-shadow: 0 0 20px rgba(234, 234, 234, 0.7); /* Sun color glow */
   color: #fff;
   cursor: pointer;
   display: inline-block;
