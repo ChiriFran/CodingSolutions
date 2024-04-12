@@ -33,7 +33,7 @@
           <p>¿Que necesitas solucionar hoy <span id="diaSemanaNav">#</span>?</p>
         </div>
         <div class="carousel-text">
-          <p>¡Haz que la tecnología trabaje para ti! Descubre cómo.</p>
+          <p>Servicios de Web Hosting</p>
         </div>
         <div class="carousel-text">
           <p>¡Optimiza tu sitio web y maximiza tu presencia en línea!</p>
@@ -95,12 +95,20 @@
             <img
               src="./media/img/hero/hero2.png"
               alt=""
-              class="lineasDestacadasImg"
+              class="#"
             />
       </div>
       <div class="somosCodingSolutionsItem">
-        <p>Somos una agencia que brinda <span class="textoResaltado"> soluciones tecnológicas.</span></p>
-        <p>Descubre una gama completa de servicios:<br> Diseño y Desarrollo de sitios web, posicionamiento y optimizacion SEO, gestión de redes sociales y más.</p>
+        <h3>Somos una agencia que brinda<br><span class="textoResaltado"> soluciones tecnológicas.</span></h3>
+        <p>Descubre una gama completa de servicios:</p>
+        <h2>Programacion</h2>
+        <h2>Diseño web</h2>
+        <h2>Posicionamiento SEO</h2>
+        <h2>Actualizacion y optimizacion de sitios web</h2>
+        <h3>Otros servicios: </h3>
+        <h2>Diseño Grafico</h2>
+        <h2>Marketing Digital</h>
+
         <p class="secundaryText">No importa lo que necesites, Coding Solutions puede lograrlo. Tu objetivo es nuestro desafío. Dejá volar tus ideas.</p>
       </div>
     </section>
@@ -253,14 +261,22 @@
     <div id="formContacto">
       <div class="contactoOpciones">
         <h3>¿En que podemos ayudarte?</h3>
-        <p>Diseño y desarrollo de sitios webs</p>
-        <p>Posicionamiento online de tu marca</p>
-        <p>Optimizacion</p>
-        <p>Analisis y optimizacion SEO</p>
+        <ul>
+          <li><h2>Diseño y desarrollo de sitios webs.</h2></li>
+          <li><h2>Servicios de alojamientos a tu medida.</h2></li>
+          <li><h2>Maximizacion de tu presencia online.</h2></li>
+          <li><h2>Posicionamiento y optimizacion SEO.</h2></li>
+        </ul>
+        <h3>¿Queres potenciar tu marca?</h3>
+        <ul>
+          <li><h2>Posicionamiento de tu marca en linea.</h2></li>
+          <li><h2>Analisis posicionamiento SEO.</h2></li>
+          <li><h2>Actualizacion de tu sitio web.</h2></li>
+        </ul>
       </div>
       <div class="form-container">
         <h3>CONTACTO</h3>
-        <form class="form">
+        <form class="form" id="form">
           <div class="form-group">
             <label for="text">Nombre: </label>
             <input type="text" id="nombre" name="nombre" autocomplete="off" required="">
@@ -273,21 +289,22 @@
             <label for="textarea">¿Como te podemos ayudar?</label>
             <textarea name="textarea" id="textarea" rows="10" cols="50" autocomplete="off" required=""></textarea>
           </div>
-          <button class="form-submit-btn" type="submit">Enviar</button>
+          <button class="btn-53">
+            <div class="original">Enviar</div>
+            <div class="letters">
+              <span></span>
+              <span>E</span>
+              <span>N</span>
+              <span>V</span>
+              <span>I</span>
+              <span>A</span>
+              <span>R</span>
+            </div>
+          </button>
+          
         </form>
       </div>
     </div>
-
-    <section id="newsletter">
-      <div id="newsletterContainer">
-        <h3>¡Siempre hay novedades!</h3>
-        <h4>Completá tus datos y obtené un 15% off en tu próxima compra.</h4>
-        <form action="" class="newsletterForm">
-          <input type="email" placeholder="Email: " />
-          <input type="submit" />
-        </form>
-      </div>
-    </section>
 
     <footer>
       <div id="footerContainer">
@@ -427,10 +444,10 @@
           </div>
         </div>
         <div class="subscribe">
-          <p>SUBSCRIBE</p>
-          <input placeholder="Your e-mail" class="subscribe-input" name="email" type="email">
+          <p>SUSCRIBETE!</p>
+          <input placeholder="Email: " class="subscribe-input" name="email" type="email">
           <br>
-          <div class="submit-btn">SUBMIT</div>
+          <div class="submit-btn">ENVIAR</div>
         </div>
       </div>
       <div class="footer-info infoMobile">
@@ -443,9 +460,7 @@
 
     <script src="./scripts/nav.js"></script>
     <script src="./scripts/sticky.js"></script>
-    <script src="./scripts/heroSlider.js"></script>
     <script src="./scripts/diaDeHoy.js"></script>
-    <script src="./scripts/nuevoLanzamientosSlider.js"></script>
     <script src="./scripts/novedadesForm.js"></script>
     <script src="./scripts/dialog.js"></script>
   </body>
