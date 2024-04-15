@@ -26,9 +26,6 @@ body {
 #mensajeSlider {
   width: 100%;
   overflow: hidden;
-  z-index: 100000;
-  position: fixed;
-  top: 0;
   background-color: var(--colorFont);
 }
 
@@ -225,7 +222,7 @@ body {
 
 .sticky {
   position: sticky;
-  top: 2rem;
+  top: 0;
   background: var(--colorFont);
   color: var(--colorBase);
   transition: 0.2s;
