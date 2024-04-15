@@ -996,7 +996,7 @@ footer nav ul li:hover {
 
 .footer-midle-info p {
   font-size: clamp(0.8rem, 2vw, 1rem);
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .footer-right {
