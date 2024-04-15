@@ -713,7 +713,7 @@ body {
 /* contacto form */
 #formContacto {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   flex-flow: row;
   align-items: flex-start;
@@ -1121,9 +1121,6 @@ footer nav ul li:hover {
 }
 
 @media (min-width: 1401px) and (max-width: 1600px) {
-  .slider-container-hero {
-    height: 70vh;
-  }
 
   .navList {
     display: flex;
@@ -1134,9 +1131,6 @@ footer nav ul li:hover {
 }
 
 @media (min-width: 1001px) and (max-width: 1400px) {
-  .slider-container-hero {
-    height: 50vh;
-  }
 
   #formContacto {
     height: 10vh;
