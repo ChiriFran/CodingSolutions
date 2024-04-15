@@ -129,8 +129,8 @@ body {
   font-weight: 600;
   font-style: italic;
   color: var(--colorBase);
-  animation: slideText 2.5s ease-in-out;
   margin: 5rem 20% 0;
+  animation: slideText 2.5s ease-in-out;
 }
 
 @keyframes slideText {
@@ -157,7 +157,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: tittleAnimation 15s linear infinite;
+  animation: tittleAnimation 10s linear infinite;
 }
 
 /* nav */
@@ -1159,35 +1159,13 @@ footer nav ul li:hover {
   .slide-hero h1 {
     font-size: clamp(4rem, 2vw, 6rem);
     margin: 0 0 4rem 0;
-    animation: slideTitle 1s ease-in-out;
-  }
-
-  @keyframes slideTitle {
-    0% {
-      transform: translateX(-300%);
-      scale: 0.7;
-    }
-    100% {
-      transform: translateX(0);
-      scale: 1;
-    }
+    animation: slideTitle 2s ease-in-out;
   }
 
   .slide-hero p {
     font-size: clamp(1.2rem, 4vw, 1.4rem);
-    animation: slideText 1.5s ease-in-out;
+    animation: slideText 2.5s ease-in-out;
     margin: 0 0;
-  }
-
-  @keyframes slideText {
-    0% {
-      transform: translateX(-300%);
-      scale: 0.7;
-    }
-    100% {
-      transform: translateX(0);
-      scale: 1;
-    }
   }
 
   .sticky-nav {
