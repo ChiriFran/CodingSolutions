@@ -116,11 +116,13 @@ body {
 @keyframes myAnimTitle {
   0% {
     opacity: 0;
+    filter: blur(2px);
     transform: translateX(-550px);
   }
 
   100% {
     opacity: 1;
+    filter: blur(0);
     transform: translateX(0);
   }
 }
@@ -137,11 +139,13 @@ body {
 @keyframes myAnimText {
   0% {
     opacity: 0;
+    filter: blur(2px);
     transform: translateX(-550px);
   }
 
   100% {
     opacity: 1;
+    filter: blur(0);
     transform: translateX(0);
   }
 }
@@ -1167,6 +1171,7 @@ footer nav ul li:hover {
     0% {
       animation-timing-function: ease-in;
       opacity: 0;
+      filter: blur(2px);
       transform: translateX(-250px);
     }
 
@@ -1194,6 +1199,7 @@ footer nav ul li:hover {
     90% {
       animation-timing-function: ease-out;
       transform: translateX(0);
+      filter: blur(0);
     }
 
     95% {
