@@ -110,17 +110,18 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: slideTitle 1.5s ease-in-out;
+  animation: myAnimTitle 1s ease-out 0s 1 normal forwards;
 }
 
-@keyframes slideTitle {
+@keyframes myAnimTitle {
   0% {
-    transform: translateX(-300%);
-    scale: 0.7;
+    opacity: 0;
+    transform: translateX(-350px);
   }
+
   100% {
+    opacity: 1;
     transform: translateX(0);
-    scale: 1;
   }
 }
 
@@ -130,19 +131,21 @@ body {
   font-style: italic;
   color: var(--colorBase);
   margin: 5rem 20% 0;
-  animation: slideText 2.5s ease-in-out;
+  animation: myAnimText 1.4s ease-out 0s 1 normal forwards;
 }
 
-@keyframes slideText {
+@keyframes myAnimText {
   0% {
-    transform: translateX(-300%);
-    scale: 0.7;
+    opacity: 0;
+    transform: translateX(-350px);
   }
+
   100% {
+    opacity: 1;
     transform: translateX(0);
-    scale: 1;
   }
 }
+
 .textoResaltado {
   text-transform: uppercase;
   font-weight: 800;
