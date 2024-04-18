@@ -116,7 +116,7 @@ body {
 @keyframes myAnimTitle {
   0% {
     opacity: 0;
-    transform: translateX(-350px);
+    transform: translateX(-550px);
   }
 
   100% {
@@ -137,7 +137,7 @@ body {
 @keyframes myAnimText {
   0% {
     opacity: 0;
-    transform: translateX(-350px);
+    transform: translateX(-550px);
   }
 
   100% {
