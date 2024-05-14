@@ -91,7 +91,7 @@ body {
   border-radius: 5px;
 }
 
-.slide-hero h1 {
+.slide-hero h2 {
   font-size: clamp(1rem, 8vw, 6rem);
   margin: 0 0 4rem 0;
   z-index: 10000;
@@ -99,6 +99,7 @@ body {
   font-style: italic;
   color: var(--colorBase);
   transition: 0.5s;
+  text-shadow: 5px 6px 2px var(--colorFont);
 
   background: linear-gradient(
     to left,
@@ -110,19 +111,51 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: myAnimTitle 1.5s ease-out 0s 1 normal forwards;
+  animation: myAnimTitle 2s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnimTitle {
   0% {
+    animation-timing-function: ease-in;
     opacity: 0;
     filter: blur(2px);
-    transform: translateX(-550px);
+    transform: translateX(-1500px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-168px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-58px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-20px);
   }
 
   100% {
-    opacity: 1;
-    filter: blur(0);
+    animation-timing-function: ease-out;
     transform: translateX(0);
   }
 }
@@ -132,20 +165,53 @@ body {
   font-weight: 600;
   font-style: italic;
   color: var(--colorBase);
+  text-shadow: 4px 5px 3px var(--colorFont);
   margin: 5rem 20% 0;
-  animation: myAnimText 2s ease-out 0s 1 normal forwards;
+  animation: myAnimText 2s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnimText {
   0% {
+    animation-timing-function: ease-in;
     opacity: 0;
     filter: blur(2px);
-    transform: translateX(-550px);
+    transform: translateX(-1500px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
   }
 
   100% {
-    opacity: 1;
-    filter: blur(0);
+    animation-timing-function: ease-out;
     transform: translateX(0);
   }
 }
@@ -1161,7 +1227,7 @@ footer nav ul li:hover {
     background-color: transparent;
   }
 
-  .slide-hero h1 {
+  .slide-hero h2 {
     font-size: clamp(4rem, 2vw, 6rem);
     margin: 0 0 4rem 0;
     animation: myAnim 1.5s ease 0s 1 normal forwards;
