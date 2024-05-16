@@ -531,10 +531,12 @@ body {
 .div3Left h2 {
   margin: 0.5rem 0;
   font-weight: 500;
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .div3Left h3 {
   margin: 0 1rem;
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
   font-weight: 400;
 }
 
@@ -640,16 +642,16 @@ body {
 }
 
 .div5 h2 {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
 .div5 span {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-size: clamp(0.5rem, 2vw, 0.7rem);
   margin: 1rem 1rem;
 }
 
 .div5 p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 0.8rem);
   margin: 0 1rem;
 }
 
@@ -712,12 +714,21 @@ body {
   flex-flow: column;
   align-items: baseline;
   justify-content: space-around;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
 .div7 p {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
+
+.div7 h3 {
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+}
+
+.div7 h4 {
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+}
+
 
 #CTAasesorias {
   text-decoration: none;
