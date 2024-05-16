@@ -353,7 +353,7 @@ body {
 #somosCodingSolutionsTitlte {
   text-align: center;
   font-size: clamp(1.5rem, 2vw, 1.8rem);
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 1px;
   background-color: var(--colorFont);
   color: var(--colorBase);
@@ -639,9 +639,9 @@ body {
   grid-area: 3 / 1 / 6 / 5;
   background-color: var(--colorBase);
   border: 2px solid var(--colorFont);
-  padding: 1rem 1rem;
   border-radius: 0.5rem;
   padding: 1rem 1rem;
+  padding-left: 1rem;
   display: flex;
   flex-flow: column;
   align-items: baseline;

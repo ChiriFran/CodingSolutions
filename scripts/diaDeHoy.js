@@ -21,8 +21,10 @@ function ActualizarDiaSemana() {
 
   var diaSemanaNav = document.getElementById("diaSemanaNav");
   var diaSemanaContacto = document.getElementById("diaSemanaContacto");
+  var diaSemanaContactoDiv8 = document.getElementById("diaSemanaContactoDiv8");
 
   diaSemanaNav.innerText = diaNombre;
+  diaSemanaContactoDiv8.innerText = diaNombre;
   diaSemanaContacto.innerText = diaNombre;
 
 }
