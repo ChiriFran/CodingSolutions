@@ -372,6 +372,10 @@ body {
   margin: 5rem 0;
 }
 
+.bentoGridContainer a {
+  transition: 0.3s;
+}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -379,7 +383,6 @@ body {
   gap: 1.4rem;
   margin: 2rem 2rem;
   width: 80%;
-  height: 75vh;
 }
 
 .div1 {
@@ -465,9 +468,13 @@ body {
 .div1RightRightContent {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
+}
+
+.div1RightRightContent ul:first-of-type {
+  margin: 0 1rem;
 }
 
 .div1RightContainer ul li {
@@ -479,10 +486,14 @@ body {
   margin-left: 1rem;
 }
 
+#profileImgContainer {
+  background-color: var(--colorFont);
+  height: 100%;
+}
+
 #profileImg {
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
+  width: 70px;
+  border-radius: 1rem;
 }
 
 .div2 {
@@ -509,6 +520,7 @@ body {
   text-decoration: none;
   color: var(--colorBase);
   background-color: var(--colorFont);
+  border: 2px solid var(--colorFont);
   padding: 0.5rem 2rem;
   margin: 1rem 1rem;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
@@ -543,10 +555,11 @@ body {
 .div3Right a {
   text-decoration: none;
   background-color: var(--colorBase);
+  border: 2px solid var(--colorBase);
   color: var(--colorPrimary);
   padding: 1rem 2rem;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -695,6 +708,7 @@ body {
   text-decoration: none;
   color: var(--colorBase);
   background-color: var(--colorFont);
+  border: 2px solid var(--colorFont);
   padding: 1rem 2rem;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin: 1rem;
@@ -729,18 +743,20 @@ body {
   font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
-
-#CTAasesorias {
+.div7 a {
   text-decoration: none;
   color: var(--colorFont);
   padding: 1rem 2rem;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   background-color: var(--colorBase);
+  border: 2px solid var(--colorBase);
+  font-size: 0.8rem;
 }
 
 .div8 {
   grid-area: 7 / 11 / 10 / 13;
   background-color: var(--colorFont);
+  border: 2px solid var(--colorFont);
   color: var(--colorBase);
   border-radius: 0.5rem;
 
@@ -762,14 +778,28 @@ body {
 
 .div8 a {
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   background-color: var(--colorBase);
+  border: 2px solid var(--colorBase);
   color: var(--colorFont);
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.3rem 1.5rem;
 }
 
+.btnLightHover:hover {
+  background-color: var(--colorBase);
+  color: var(--colorFont);
+  border: 2px solid var(--colorFont);
+  transition: 0.3s;
+}
+
+.btnDarkHover:hover {
+  background-color: var(--colorFont);
+  color: var(--colorBase);
+  border: 2px solid var(--colorBase);
+  transition: 0.3s;
+}
 
 /* efecto underline carga */
 .underlined-hover-destacados {
@@ -1559,9 +1589,16 @@ footer nav ul li:hover {
   }
 }
 
-@media (min-width: 1001px) and (max-width: 1400px) {
+@media (min-width: 801px) and (max-width: 1399px) {
   #formContacto {
-    height: 95vh;
+    height: 85vh;
+    width: 100%;
+    height: auto;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem 1.4rem;
+    padding-bottom: 4rem;
   }
 }
 
