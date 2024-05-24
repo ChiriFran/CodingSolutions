@@ -1865,7 +1865,6 @@ footer nav ul li:hover {
 
   .div2 {
     padding: 2rem 1rem;
-    order: 1;
     flex-flow: column;
   }
 
@@ -1875,7 +1874,6 @@ footer nav ul li:hover {
 
   .div3 {
     padding: 2rem 1rem;
-    order: 3;
   }
 
   .div4 {
