@@ -370,6 +370,7 @@ body {
   justify-content: center;
   width: 100%;
   margin: 5rem 0;
+  overflow: hidden;
 }
 
 .bentoGridContainer a {
@@ -427,7 +428,7 @@ body {
 }
 
 .div1LeftContainer p {
-  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-size: 1rem;
   font-weight: 600;
   margin: 0 1rem;
   color: var(--colorBase);
@@ -443,7 +444,7 @@ body {
   list-style: none;
 }
 
-.socialContainer{
+.socialContainer {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -554,7 +555,7 @@ body {
 }
 
 .div1RightRightContent p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: 1rem;
 }
 
@@ -578,11 +579,11 @@ body {
 }
 
 .div2 h2 {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
 }
 
 .div2 h3 {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: 1rem;
   color: var(--colorPrimary);
   margin: 1rem 1rem;
   padding: 0.5rem 0;
@@ -616,16 +617,16 @@ body {
 .div3Left h2 {
   margin: 0.5rem 0;
   font-weight: 500;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: 1rem;
 }
 
 .div3Left h3 {
   margin: 0 1rem;
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-size: 1rem;
   font-weight: 400;
 }
 
-.div3Right{
+.div3Right {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -639,7 +640,7 @@ body {
   color: var(--colorPrimary);
   padding: 0.5rem 1rem;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
@@ -657,27 +658,26 @@ body {
   justify-content: space-evenly;
 }
 
-.div4 h2{
-  font-size: clamp(0.8rem, 2vw, 1rem);
+.div4 h2 {
+  font-size: 1rem;
 }
 
-.div4 p{
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
-
+.div4 p {
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
-.div4 a{
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+.div4 a {
+  font-size: 1rem;
   text-decoration: none;
   text-align: center;
   color: var(--colorBase);
   background-color: var(--colorFont);
   border: 2px solid var(--colorFont);
-  padding: 0.4rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
-  margin: 0.3rem 0;
+  margin-top: 1.5rem;
 }
-
 
 .div5 {
   grid-area: 6 / 1 / 10 / 5;
@@ -689,21 +689,21 @@ body {
 }
 
 .div5 h2 {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-size: 1rem;
 }
 
 .div5 span {
-  font-size: clamp(0.5rem, 2vw, 0.7rem);
+  font-size: 1rem;
   margin: 1rem 1rem;
 }
 
 .div5 p {
-  font-size: clamp(0.8rem, 2vw, 0.8rem);
+  font-size: 1rem;
   margin: 0 1rem;
 }
 
 .div5 p:last-of-type {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-size: 1rem;
   margin: 1rem 0;
 }
 
@@ -721,16 +721,16 @@ body {
 }
 
 .div6 h2 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: 1rem;
 }
 
 .div6 span {
   margin: 0.5rem 1rem;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: 1rem;
 }
 
 .div6 h3 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: 1rem;
   margin: rem 1rem;
 }
 
@@ -747,7 +747,7 @@ body {
   padding: 1rem 2rem;
   border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin: 1rem;
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -766,16 +766,10 @@ body {
   padding: 1rem 1rem;
 }
 
-.div7 p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
-}
-
-.div7 h3 {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
-}
-
+.div7 p,
+.div7 h3,
 .div7 h4 {
-  font-size: clamp(0.5rem, 2vw, 0.7rem);
+  font-size: 1rem;
 }
 
 .div7 a {
@@ -804,12 +798,9 @@ body {
   font-size: 0.8rem;
 }
 
+.div8 h3,
 .div8 h2 {
   font-size: clamp(0.8rem, 2vw, 1rem);
-}
-
-.div8 h3 {
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
 .div8 a {
@@ -1811,8 +1802,113 @@ footer nav ul li:hover {
     display: none;
   }
 
+  .parent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 1rem;
+    width: 90%;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8 {
+    display: flex;
+    width: 100%;
+  }
+
   .div1 {
     flex-flow: column;
+  }
+
+  .div1LeftContainer {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    order: 2;
+  }
+
+  #inputBusqueda {
+    display: none;
+  }
+
+  #lupa {
+    display: none;
+  }
+
+  .div1LeftContainer p {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 1rem 0;
+  }
+
+  .div1RightContainer {
+    width: 100%;
+    margin-left: 0;
+    order: 1;
+  }
+
+  .div1RightLeftContent {
+    flex-flow: column;
+  }
+
+  .div2 {
+    padding: 2rem 1rem;
+    order: 1;
+    flex-flow: column;
+  }
+
+  .div2 a {
+    padding: 1rem 0;
+  }
+
+  .div3 {
+    padding: 2rem 1rem;
+    order: 3;
+  }
+
+  .div4 {
+    padding: 2rem 1rem;
+  }
+
+  .div5 {
+    padding: 2rem 1rem;
+    flex-flow: column;
+  }
+
+  .div6 p {
+    margin: 1rem 1rem;
+  }
+
+  .div7 {
+    padding: 2rem 1rem;
+  }
+
+  .div7 a {
+    margin-top: 1rem;
+  }
+
+  .div8 {
+    display: flex;
+    width: 100%;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .div8 a {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
   }
 
   .contactoContainer {
