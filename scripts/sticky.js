@@ -5,7 +5,6 @@ function handleScroll() {
 
 function applyStickyStyles(isSticky) {
   const nav = document.querySelector(".nav");
-  const iconNavBarMobileLogo = document.getElementById("navBarMobileLogo");
   const iconNavBarMobile = document.getElementById("navBarMobile");
   const botonAbrirModalNav = document.getElementById("botonAbrirModalNav");
 
@@ -20,12 +19,6 @@ function applyStickyStyles(isSticky) {
 
   const backgroundColor = isSticky ? "#0e0700" : "#f6f1e9";
   const textColor = isSticky ? "#fff" : "#2b2b2b";
-
-  const visibility = isSticky ? "visible" : "hidden";
-  const position = isSticky ? "relative" : "absolute";
-
-  iconNavBarMobileLogo.style.visibility = visibility;
-  iconNavBarMobileLogo.style.position = position;
 
   // Cambiar color de fondo del botón según el estado sticky
   botonAbrirModalNav.style.backgroundColor = backgroundColor;
