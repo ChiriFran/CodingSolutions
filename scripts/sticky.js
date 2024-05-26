@@ -17,12 +17,13 @@ function applyStickyStyles(isSticky) {
     }
   });
 
-  const backgroundColor = isSticky ? "#0e0700" : "#f6f1e9";
-  const textColor = isSticky ? "#fff" : "#2b2b2b";
+  const backgroundColor = isSticky ? "#14274e" : "#e7eefa";
+  const textColor = isSticky ? "#e7eefa" : "#14274e";
 
   // Cambiar color de fondo del botón según el estado sticky
   botonAbrirModalNav.style.backgroundColor = backgroundColor;
   botonAbrirModalNav.style.color = textColor;
+
 
   // Cambiar color del subrayado del texto dentro del elemento .underline-hover::before
   const underlineHovers = document.querySelectorAll(".underlined-hover");

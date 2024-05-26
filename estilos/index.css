@@ -6,7 +6,7 @@
 
 :root {
   --colorWhite: #f1f6f9;
-  --colorBase: #9ba4b4;
+  --colorBase: #e7eefa;
   --colorPrimary: #394867;
   --colorFont: #14274e;
   --fontFamily: "Kanit";
@@ -413,6 +413,7 @@ body {
   margin: 0 0.5rem;
   color: var(--colorFont);
   border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+  width:90%;
 }
 
 #lupa {
