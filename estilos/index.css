@@ -895,7 +895,7 @@ body {
 
 .contactoContainer p {
   padding: 0 25%;
-  text-align: start;
+  text-align: center;
   color: var(--colorBase);
   margin: 1rem;
 }
