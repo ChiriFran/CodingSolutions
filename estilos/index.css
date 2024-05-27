@@ -903,14 +903,14 @@ body {
 .contactoContainer a {
   text-decoration: none;
   padding: 10px 1.5rem;
-  background-color: var(--colorBase);
+  background-color: var(--colorPrimary);
   border-radius: 2px;
   margin: 2rem 0;
   transition: 0.3s;
 }
 
 .contactoContainer a:hover {
-  background-color: var(--colorFont);
+  background-color: var(--colorPrimary);
   transition: 0.3s;
 }
 
