@@ -1,561 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./estilos/normalize.css" />
-    <link rel="stylesheet" href="./estilos/index.css" />
+<head>
+  <!-- Author: Coding Solutions Arg. by Chiri Francisco -->
+  <title>Coding Solutions Arg</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="./media/img/logo/logoBlanco.png" />
-    <!-- icons NavBar -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
+  <link rel="stylesheet" href="./estilos/normalize.css" />
+  <link rel="stylesheet" href="./estilos/index.css" />
 
-    <!-- Font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="icon" href="./media/img/logo/logoBlanco.png" />
+  <!-- icons NavBar -->
+  <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
 
-    <title>Coding Solutions Arg</title>
-  </head>
-  <body>
-    <section id="mensajeSlider">
-      <div class="carousel-container">
-        <div class="carousel-text">
-          <p>¿Que necesitas solucionar hoy <span id="diaSemanaNav">#</span>?</p>
-        </div>
-        <div class="carousel-text">
-          <p>Servicios de Web Hosting</p>
-        </div>
-        <div class="carousel-text">
-          <p>¡Optimiza tu sitio web!</p>
-        </div>
-        <div class="carousel-text">
-          <p>Posicionamiento y optimizacion SEO.</p>
-        </div>
-        <div class="carousel-text">
-          <p>Plan: Total Solution</p>
-        </div>
+  <!-- Font Family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Canonical Url -->
+  <link rel="canonical" href="https://codingsolutionsarg.com">
+  <!-- Robotags -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="publisher" content="Coding Solutions Arg">
+  <!-- Description & Keywords -->
+  <meta name="description"
+    content="En Coding Solutions Arg, te ayudamos a transformar tu negocio o empresa con desarrollo web, estrategias de posicionamiento web. Ofrecemos diseño y desarrollo de sitios, aloamiento web, asesorías y analisis de tu web y posicionamiento SEO, creación de landing pages y tiendas online. ¡Posiciona tu marca en internet con nosotros y recibe una propuesta personalizada!">
+  <meta name="keywords"
+    content="desarrollo web, SEO, landing pages, tiendas online,ecommerce, páginas web para empresas, posicionamiento de marca,posicionamiento SEO, páginas web argentina, crear sitio web, precios paginas web, Coding Solutions, Coding Solutions Arg, alojamiento web.">
+  <!-- Metadatos Open Graph básicos / Compartir en redes sociales-->
+  <meta property="og:title" content="Coding Solutions Arg">
+  <meta property="og:description"
+    content="¿Quieres destacar en un mundo lleno de alternativas? En Coding Solutions te ayudaremos a brillar.">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://codingsolutionsarg.com">
+  <meta property="og:site_name" content="Coding Solutions Arg">
+  <meta property="og:locale" content="es_AR">
+</head>
+
+<body>
+  <section id="mensajeSlider">
+    <div class="carousel-container">
+      <div class="carousel-text">
+        <p>¿Que necesitas solucionar hoy <span id="diaSemanaNav">#</span>?</p>
       </div>
-    </section>
-
-    <div class="slider-container-hero">
-      <div class="slider-content-hero" id="slider-hero">
-        <div class="slide-hero">
-          <h2 class="headerTitle">Coding Solutions Arg</h2>
-          <p class="headerText">
-            ¿Quieres <b>destacar</b> en un mundo lleno de alternativas? En
-            Coding Solutions te ayudaremos a <b>brillar</b>.
-          </p>
-        </div>
+      <div class="carousel-text">
+        <p>Servicios de Web Hosting</p>
+      </div>
+      <div class="carousel-text">
+        <p>¡Optimiza tu sitio web!</p>
+      </div>
+      <div class="carousel-text">
+        <p>Posicionamiento y optimizacion SEO.</p>
+      </div>
+      <div class="carousel-text">
+        <p>Plan: Total Solution</p>
       </div>
     </div>
+  </section>
 
-    <section id="navBarMobile" class="sticky-nav">
-      <button class="abrirMenu" id="abrir" class="abrir">
-        <i class="bi bi-list"></i>
-      </button>
-    </section>
-
-    <nav class="nav" id="nav">
-      <div class="navWidth">
-        <button class="cerrarMenu" id="cerrar">
-          <i class="bi bi-x-lg"></i>
-        </button>
-        <ul class="navList">
-          <li>
-            <a
-              id="mueblesBtn"
-              class="underlined-hover"
-              href="#somosCodingSolutions"
-              >Inicio</a
-            >
-          </li>
-          <li>
-            <a id="mesasBtn" class="underlined-hover" href="#servicios"
-              >Servicios</a
-            >
-          </li>
-          <li>
-            <a id="sillasBtn" class="underlined-hover" href="#nuestrosProyectos"
-              >Proyectos</a
-            >
-          </li>
-          <li>
-            <a id="contactoBtn" class="underlined-hover" href="#contacto"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-        <button id="botonAbrirModalNav" class="underlined-hover">
-          Preguntas frecuentes
-        </button>
+  <div class="slider-container-hero">
+    <div class="slider-content-hero" id="slider-hero">
+      <div class="slide-hero">
+        <h2 class="headerTitle">Coding Solutions Arg</h2>
+        <p class="headerText">
+          ¿Quieres <b>destacar</b> en un mundo lleno de alternativas? En
+          Coding Solutions te ayudaremos a <b>brillar</b>.
+        </p>
       </div>
-    </nav>
+    </div>
+  </div>
 
-    <h1 id="somosCodingSolutionsTitlte">
-      Diseño y desarrollo de sitios webs, posicionamiento SEO y optimización de
-      tu presencia en linea.
-    </h1>
+  <section id="navBarMobile" class="sticky-nav">
+    <button class="abrirMenu" id="abrir" class="abrir">
+      <i class="bi bi-list"></i>
+    </button>
+  </section>
 
-    <section class="bentoGridContainer" id="servicios">
-      <div class="parent">
-        <div class="div1">
-          <div class="div1LeftContainer">
-            <p>Visión general</p>
-            <div class="socialContainer">
-              <div class="socialContainerLeft">
-                <a
-                  href="https://chirifran.github.io/portfolio/"
-                  target="_blank"
-                >
-                  <button class="button">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      height="24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      class="w-6 h-6 text-gray-800 dark:text-white"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-                        fill-rule="evenodd"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </button>
-                </a>
-              </div>
-              <div class="socialContainerCenter">
-                <a href="https://wa.me/541130504515" target="_blank">
-                  <button class="button">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      height="24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      class="w-6 h-6 text-gray-800 dark:text-white"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
-                        fill-rule="evenodd"
-                        fill="currentColor"
-                      ></path>
-                      <path
-                        d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </button>
-                </a>
-              </div>
-              <div class="socialContainerRight">
-                <a href="https://github.com/ChiriFran" target="_blank">
-                  <button class="button">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      height="24"
-                      width="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      class="w-6 h-6 text-gray-800 dark:text-white"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
-                        fill-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </a>
-              </div>
+  <nav class="nav" id="nav">
+    <div class="navWidth">
+      <button class="cerrarMenu" id="cerrar">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <ul class="navList">
+        <li>
+          <a id="mueblesBtn" class="underlined-hover" href="#somosCodingSolutions">Inicio</a>
+        </li>
+        <li>
+          <a id="mesasBtn" class="underlined-hover" href="#servicios">Servicios</a>
+        </li>
+        <li>
+          <a id="sillasBtn" class="underlined-hover" href="#nuestrosProyectos">Proyectos</a>
+        </li>
+        <li>
+          <a id="contactoBtn" class="underlined-hover" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+      <button id="botonAbrirModalNav" class="underlined-hover">
+        Preguntas frecuentes
+      </button>
+    </div>
+  </nav>
+
+  <h1 id="somosCodingSolutionsTitlte">
+    Diseño y desarrollo de sitios webs, posicionamiento SEO y optimización de
+    tu presencia en linea.
+  </h1>
+
+  <section class="bentoGridContainer" id="servicios">
+    <div class="parent">
+      <div class="div1">
+        <div class="div1LeftContainer">
+          <p>Visión general</p>
+          <div class="socialContainer">
+            <div class="socialContainerLeft">
+              <a href="https://chirifran.github.io/portfolio/" target="_blank">
+                <button class="button">
+                  <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                      d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                      fill-rule="evenodd" fill="currentColor"></path>
+                  </svg>
+                </button>
+              </a>
             </div>
+            <div class="socialContainerCenter">
+              <a href="https://wa.me/541130504515" target="_blank">
+                <button class="button">
+                  <svg viewBox="0 0 24 24" fill="none" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                      d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+                      fill-rule="evenodd" fill="currentColor"></path>
+                    <path
+                      d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="socialContainerRight">
+              <a href="https://github.com/ChiriFran" target="_blank">
+                <button class="button">
+                  <svg viewBox="0 0 24 24" fill="currentColor" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" class="w-6 h-6 text-gray-800 dark:text-white">
+                    <path clip-rule="evenodd"
+                      d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <div class="imgContainer">
+                <input id="inputBusqueda" type="text" />
+              </div>
+            </li>
+            <li><img id="lupa" src="./media/icons/lupa.svg" alt="" /></li>
+          </ul>
+        </div>
+        <div class="div1RightContainer">
+          <div class="div1RightLeftContent">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=codingsolutionsarg@gmail.com" target="_blank">
+              <img src="./media/icons/email.svg" alt="" />
+            </a>
+            <img src="./media/icons/phone.svg" alt="" />
+          </div>
+          <div class="div1RightRightContent">
             <ul>
               <li>
-                <div class="imgContainer">
-                  <input id="inputBusqueda" type="text" />
-                </div>
+                <h2>Chiri Francisco</h2>
               </li>
-              <li><img id="lupa" src="./media/icons/lupa.svg" alt="" /></li>
+              <li>
+                <p>Desarrolador web</p>
+              </li>
+            </ul>
+            <ul id="profileImgContainer">
+              <li>
+                <img id="profileImg" src="./media/img/profileImg.png" alt="" />
+              </li>
             </ul>
           </div>
-          <div class="div1RightContainer">
-            <div class="div1RightLeftContent">
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=codingsolutionsarg@gmail.com"
-                target="_blank"
-              >
-                <img src="./media/icons/email.svg" alt="" />
-              </a>
-              <img src="./media/icons/phone.svg" alt="" />
-            </div>
-            <div class="div1RightRightContent">
-              <ul>
-                <li><h2>Chiri Francisco</h2></li>
-                <li><p>Desarrolador web</p></li>
-              </ul>
-              <ul id="profileImgContainer">
-                <li>
-                  <img
-                    id="profileImg"
-                    src="./media/img/profileImg.png"
-                    alt=""
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="div2">
-          <h2>
-            ¡Necesito ayuda! Tengo mi sitio en linea pero no atraigo clientes.
-          </h2>
-          <h3>
-            En Coding Solutions trabajamos con los fundamentos necesarios para
-            garantizar resultados.
-          </h3>
-          <a
-            href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20transformar%20mi%20negocio"
-            class="btnLightHover"
-            target="_blank"
-            >¡Transforma tu negocio, actúa ya!</a
-          >
-        </div>
-        <div class="div3">
-          <div class="div3Left">
-            <h2>Complementa tu sitio web con:</h2>
-            <h3>Estrategias de Marketing Digital</h3>
-            <h3>Diseño Gráfico para modernizar tu web</h3>
-            <h3>Manejo de redes sociales</h3>
-          </div>
-          <div class="div3Right">
-            <a
-              href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20complemetar%20mi%20marca"
-              class="btnDarkHover"
-              target="_blank"
-              >¡Complementa tu plan!</a
-            >
-          </div>
-        </div>
-        <div class="div4">
-          <h2>¡Posiciona tu marca en internet y el mundo!</h2>
-          <p>
-            Tenemos un Plan de 3 pasos para que puedas lograrlo de manera
-            efectiva.
-          </p>
-          <a
-            href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20posicionar%20mi%20marca"
-            class="btnDarkHover"
-            target="_blank"
-            >¡Quiero posicionar mi marca!</a
-          >
-        </div>
-        <div class="div5">
-          <h2>¿Cuanto cuesta en promedio una pagina web en Argentina?</h2>
-          <span>(Sin servicios de hosting ni alojamiento)</span>
-          <p>$250.000 Landing Page</p>
-          <p>$350.000 Páginas Web para Empresas</p>
-          <p>$520.000 Tiendas online</p>
-          <p>
-            $900.000 Tiendas online con Bases de datos: <br />
-            Usuarios, Pedidos, Productos.
-          </p>
-          <p>
-            Extra Promedio en Argentina : Dominio: $8.500 por año | Hosting +
-            mantenimiento: $13.000 por mes
-          </p>
-        </div>
-        <div class="div6">
-          <h2>Landing Page con secciones</h2>
-          <span
-            >Landing Page con toda la informacion de tu negocio, ideal para
-            Empresas o Instituciones.</span
-          >
-          <p>
-            No importa lo que necesites, Coding Solutions puede lograrlo. Tu
-            objetivo es nuestro desafío. Dejá volar tus ideas.
-          </p>
-          <h3>Desde $350.000</h3>
-          <a
-            href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20comenzar%20mi%20proyecto"
-            btnDarkHover
-            target="_blank"
-            >¡Empieza tu proyecto ahora!</a
-          >
-        </div>
-        <div class="div7">
-          <p>30 Min - 60 Min</p>
-          <h3>Asesorias de Posicionamiento SEO</h3>
-          <h4>Desde $15.000 ( 15 USD )</h4>
-          <a
-            href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20reservar%20una%20asesoria"
-            btnDarkHover
-            target="_blank"
-            >¡Reservar Ahora!</a
-          >
-        </div>
-        <div class="div8">
-          <h2>
-            Hoy <span id="diaSemanaContactoDiv8">martes</span> podemos reunirnos
-          </h2>
-          <h3>¿Tenes alguna duda ? La resolvemos</h3>
-          <a
-            href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20contrar%20tus%20servicios"
-            btnDarkHover
-            target="_blank"
-            >¡Contrata nuestro servicio ahora!</a
-          >
         </div>
       </div>
-    </section>
-
-    <section id="contacto">
-      <div class="contactoContainer">
-        <h4>¿Tienes un proyecto?</h4>
-        <h2>CONTACTANOS HOY <span id="diaSemanaContacto">#</span>!</h2>
-        <p>
-          No importa la complejidad ni la escala del mismo, es hora de dar el
-          primer paso, en Coding Solutions podemos ayudarte.
-        </p>
-        <a
-          href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions:%20"
-          class="underlined-hover"
-          ><h3>CONTACTAR</h3></a
-        >
-      </div>
-    </section>
-
-    <section id="avisos">
-      <div id="avisosContainer">
+      <div class="div2">
+        <h2>
+          ¡Necesito ayuda! Tengo mi sitio en linea pero no atraigo clientes.
+        </h2>
         <h3>
-          ¡Obtene el paquete Total Solutions con un descuento exclusivo para
-          miembros de nuestra comunidad!
+          En Coding Solutions trabajamos con los fundamentos necesarios para
+          garantizar resultados.
         </h3>
+        <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20transformar%20mi%20negocio"
+          class="btnLightHover" target="_blank">¡Transforma tu negocio, actúa ya!</a>
       </div>
-    </section>
-
-    <h2 class="proyectoTitle">PROYECTOS</h2>
-    <section id="nuestrosProyectos">
-      <div class="outer-container">
-        <div class="inner-container">
-          <div class="scroll-container">
-            <div class="container">
-              <div
-                data-text="Gentleman Babershop"
-                style="--r: -15"
-                class="glass"
-              >
-                <a href="https://chirifran.github.io/barberia/" target="_blank">
-                  <img
-                    src="./media/img/cards/barberia2.png"
-                    width="150px"
-                    alt="Gentleman Barbershop"
-                  />
-                </a>
-              </div>
-              <div data-text="dielectronics.arg" style="--r: 5" class="glass">
-                <a
-                  href="https://chirifran.github.io/dielectronics.arg/index.html"
-                  target="_blank"
-                >
-                  <img
-                    src="./media/img/hero/dielectronics.png"
-                    width="150px"
-                    alt="dielectronics.arg"
-                  />
-                </a>
-              </div>
-              <div data-text="Carla Deco." style="--r: 25" class="glass">
-                <a
-                  href="https://chirifran.github.io/CarlaDeco./index.html"
-                  target="_blank"
-                >
-                  <img
-                    src="./media/img/hero/carlaDeco.png"
-                    width="150px"
-                    alt="Carla Deco."
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+      <div class="div3">
+        <div class="div3Left">
+          <h2>Complementa tu sitio web con:</h2>
+          <h3>Estrategias de Marketing Digital</h3>
+          <h3>Diseño Gráfico para modernizar tu web</h3>
+          <h3>Manejo de redes sociales</h3>
+        </div>
+        <div class="div3Right">
+          <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20complemetar%20mi%20marca"
+            class="btnDarkHover" target="_blank">¡Complementa tu plan!</a>
         </div>
       </div>
-    </section>
-
-    <div id="formContacto">
-      <div class="contactoOpciones">
-        <h3>¿En que podemos ayudarte?</h3>
-        <ul>
-          <li><h2>Diseño y desarrollo de sitios webs.</h2></li>
-          <li><h2>Servicios de alojamientos a tu medida.</h2></li>
-          <li><h2>Maximización de tu presencia online.</h2></li>
-          <li><h2>Posicionamiento y optimización SEO.</h2></li>
-        </ul>
-        <h3>¿Queres potenciar tu marca?</h3>
-        <ul>
-          <li><h2>Posicionamiento de tu marca en linea.</h2></li>
-          <li><h2>Análisis posicionamiento SEO.</h2></li>
-          <li><h2>Actualización de tu sitio web.</h2></li>
-        </ul>
+      <div class="div4">
+        <h2>¡Posiciona tu marca en internet y el mundo!</h2>
+        <p>
+          Tenemos un Plan de 3 pasos para que puedas lograrlo de manera
+          efectiva.
+        </p>
+        <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20posicionar%20mi%20marca"
+          class="btnDarkHover" target="_blank">¡Quiero posicionar mi marca!</a>
       </div>
-      <div class="form-container">
-        <h3>CONTACTO</h3>
-        <form class="form" id="form">
-          <div class="form-group">
-            <label for="text">Nombre: </label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              autocomplete="off"
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email: </label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              autocomplete="off"
-              required=""
-            />
-          </div>
-          <div class="form-group">
-            <label for="textarea">¿Como te podemos ayudar?</label>
-            <textarea
-              name="textarea"
-              id="textarea"
-              rows="10"
-              cols="50"
-              autocomplete="off"
-              required=""
-            ></textarea>
-          </div>
-          <button class="btn-53">
-            <div class="original">Enviar</div>
-            <div class="letters">
-              <span></span>
-              <span>E</span>
-              <span>N</span>
-              <span>V</span>
-              <span>I</span>
-              <span>A</span>
-              <span>R</span>
-            </div>
-          </button>
-        </form>
+      <div class="div5">
+        <h2>¿Cuanto cuesta en promedio una pagina web en Argentina?</h2>
+        <span>(Sin servicios de hosting ni alojamiento)</span>
+        <p>$350.000 Landing Page</p>
+        <p>$550.000 Páginas Web para Empresas</p>
+        <p>$720.000 Tiendas online</p>
+        <p>
+          $1.000.000 Tiendas online con Bases de datos: <br />
+          Usuarios, Pedidos, Productos, Newsletter.
+        </p>
+        <p>
+          Extra Promedio en Argentina : Dominio: $16.500 - 1 año | mantenimiento: $8.000/mes
+        </p>
+      </div>
+      <div class="div6">
+        <h2>Landing Page con secciones</h2>
+        <span>Landing Page con toda la informacion de tu negocio, ideal para
+          Empresas o Instituciones.</span>
+        <p>
+          No importa lo que necesites, Coding Solutions puede lograrlo. Tu
+          objetivo es nuestro desafío. Dejá volar tus ideas.
+        </p>
+        <h3>Desde $550.000</h3>
+        <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20comenzar%20mi%20proyecto"
+          btnDarkHover target="_blank">¡Empieza tu proyecto ahora!</a>
+      </div>
+      <div class="div7">
+        <p>30 Min - 60 Min</p>
+        <h3>Asesorias de Posicionamiento SEO</h3>
+        <h4>Desde $25.000 ( 20 USD ) - 60 Min</h4>
+        <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20reservar%20una%20asesoria"
+          btnDarkHover target="_blank">¡Reservar Ahora!</a>
+      </div>
+      <div class="div8">
+        <h2>
+          Hoy <span id="diaSemanaContactoDiv8">martes</span> podemos reunirnos
+        </h2>
+        <h3>¿Tenes alguna duda ? La resolvemos</h3>
+        <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions,%20quiero%20contrar%20tus%20servicios"
+          btnDarkHover target="_blank">¡Contrata nuestro servicio ahora!</a>
       </div>
     </div>
+  </section>
 
-    <footer>
-      <div id="footerContainer">
-        <div class="footer-left">
-          <nav>
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#nuestrosProyectos">Nosotros</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </nav>
-          <div class="footer-midle-info">
-            <h3>Ayuda</h3>
-            <button id="botonAbrirModal">Preguntas frecuentes</button>
-            <dialog id="modalContainer">
-              <div id="modal">
-                <img
-                  src="./media/img/logo/logoBlancoTienda.png"
-                  id="modalLogo"
-                  alt=""
-                />
-                <button id="botonCerrarModal">
-                  <img
-                    src="./media/icons/close.svg"
-                    alt="Cerrar ventana emergente"
-                  />
-                </button>
-                <h2>Preguntas frecuentes:</h2>
-                <h3>¿Cuáles son los medios de pago?:</h3>
-                <p>Podés abonar a través de transferencia o USDT / Bitcoin</p>
-                <h3>¿Cuáles son los tiempos de entrega?:</h3>
-                <p>
-                  Los tiempos de entrega pueden variar mucho de acuerdo el
-                  proyecto y los requerimientos desl mismo. Puede varias entre 2
-                  - 3 semnas de desarrollo para adelante de acuerdo a la escala
-                  y complejidad del mismo.
-                </p>
-                <h3>MI DUDA NO ESTA EN LA LISTA</h3>
-                <p>
-                  <b>Contactate con nosotros.</b><br /><br />
-                  (011) 30504515<br />
-                  codingsolutionsarg@gmail.com
-                </p>
-                <button id="botonCerrarModal2">
-                  <img src="./media/icons/volver.svg" alt="" />
-                </button>
-              </div>
-            </dialog>
-          </div>
-        </div>
-        <div class="footer-right">
-          <div class="social-media">
-            <div class="social-icons">
-              <h3>Redes Sociales</h3>
-              <a href="#"
-                ><img src="./media/icons/whatsApp.svg" alt="Facebook"
-              /></a>
-              <a href="#"
-                ><img src="./media/icons/instagram.svg" alt="Instagram"
-              /></a>
+  <section id="contacto">
+    <div class="contactoContainer">
+      <h4>¿Tienes un proyecto?</h4>
+      <h2>CONTACTANOS HOY <span id="diaSemanaContacto">#</span>!</h2>
+      <p>
+        No importa la complejidad ni la escala del mismo, es hora de dar el
+        primer paso, en Coding Solutions podemos ayudarte.
+      </p>
+      <a href="https://wa.me/541130504515?text=Hola%20Coding%20Solutions:%20" class="underlined-hover">
+        <h3>CONTACTAR</h3>
+      </a>
+    </div>
+  </section>
+
+  <section id="avisos">
+    <div id="avisosContainer">
+      <h3>
+        ¡Obtene el paquete Total Solutions con un descuento exclusivo para
+        miembros de nuestra comunidad!
+      </h3>
+    </div>
+  </section>
+
+  <h2 class="proyectoTitle">PROYECTOS</h2>
+  <section id="nuestrosProyectos">
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="scroll-container">
+          <div class="container">
+            <div data-text="Gentleman Babershop" style="--r: -15" class="glass">
+              <a href="https://chirifran.github.io/barberia/" target="_blank">
+                <img src="./media/img/cards/barberia2.png" width="150px" alt="Gentleman Barbershop" />
+              </a>
             </div>
-          </div>
-          <div class="payment">
-            <div class="payment-icons">
-              <h3>Metodos de pago</h3>
-              <a href="#"
-                ><img src="./media/icons/american.svg" alt="visa"
-              /></a>
-              <a href="#"><img src="./media/icons/visa.svg" alt="visa" /></a>
-              <a href="#"><img src="./media/icons/mastercard.svg" alt="" /></a>
+            <div data-text="dielectronics.arg" style="--r: 5" class="glass">
+              <a href="https://chirifran.github.io/dielectronics.arg/index.html" target="_blank">
+                <img src="./media/img/hero/dielectronics.png" width="150px" alt="dielectronics.arg" />
+              </a>
             </div>
-          </div>
-          <div class="footer-info infoDesktop">
-            <p>Dirección: Buenos Aires, Argentina</p>
-            <p>Teléfono: (+54) 11-3050-4515</p>
-            <p>Email: codingsolutionsarg@gmail.com</p>
+            <div data-text="Carla Deco." style="--r: 25" class="glass">
+              <a href="https://chirifran.github.io/CarlaDeco./index.html" target="_blank">
+                <img src="./media/img/hero/carlaDeco.png" width="150px" alt="Carla Deco." />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-info infoMobile">
-        <p>Dirección:Buenos Aires, Argentina</p>
-        <p>Teléfono: (+54) 11-3050-4515</p>
-        <p>Email: codingsolutionsarg@gmail.com</p>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="./scripts/nav.js"></script>
-    <script src="./scripts/sticky.js"></script>
-    <script src="./scripts/diaDeHoy.js"></script>
-    <script src="./scripts/dialog.js"></script>
-    <script src="./scripts/scrollCards.js"></script>
-  </body>
+  <div id="formContacto">
+    <div class="contactoOpciones">
+      <h3>¿En que podemos ayudarte?</h3>
+      <ul>
+        <li>
+          <h2>Diseño y desarrollo de sitios webs.</h2>
+        </li>
+        <li>
+          <h2>Servicios de alojamientos a tu medida.</h2>
+        </li>
+        <li>
+          <h2>Maximización de tu presencia online.</h2>
+        </li>
+        <li>
+          <h2>Posicionamiento y optimización SEO.</h2>
+        </li>
+      </ul>
+      <h3>¿Queres potenciar tu marca?</h3>
+      <ul>
+        <li>
+          <h2>Posicionamiento de tu marca en linea.</h2>
+        </li>
+        <li>
+          <h2>Análisis posicionamiento SEO.</h2>
+        </li>
+        <li>
+          <h2>Actualización de tu sitio web.</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="form-container">
+      <h3>CONTACTO</h3>
+      <form class="form" id="form">
+        <div class="form-group">
+          <label for="text">Nombre: </label>
+          <input type="text" id="nombre" name="nombre" autocomplete="off" required="" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email" autocomplete="off" required="" />
+        </div>
+        <div class="form-group">
+          <label for="textarea">¿Como te podemos ayudar?</label>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" autocomplete="off" required=""></textarea>
+        </div>
+        <button class="btn-53">
+          <div class="original">Enviar</div>
+          <div class="letters">
+            <span></span>
+            <span>E</span>
+            <span>N</span>
+            <span>V</span>
+            <span>I</span>
+            <span>A</span>
+            <span>R</span>
+          </div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footerContainer">
+      <div class="footer-left">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nuestrosProyectos">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="footer-midle-info">
+          <h3>Ayuda</h3>
+          <button id="botonAbrirModal">Preguntas frecuentes</button>
+          <dialog id="modalContainer">
+            <div id="modal">
+              <img src="./media/img/logo/logoBlancoTienda.png" id="modalLogo" alt="" />
+              <button id="botonCerrarModal">
+                <img src="./media/icons/close.svg" alt="Cerrar ventana emergente" />
+              </button>
+              <h2>Preguntas frecuentes:</h2>
+              <h3>¿Cuáles son los medios de pago?:</h3>
+              <p>Podés abonar a través de transferencia o USDT / Bitcoin</p>
+              <h3>¿Cuáles son los tiempos de entrega?:</h3>
+              <p>
+                Los tiempos de entrega pueden variar mucho de acuerdo el
+                proyecto y los requerimientos desl mismo. Puede varias entre 2
+                - 3 semnas de desarrollo para adelante de acuerdo a la escala
+                y complejidad del mismo.
+              </p>
+              <h3>MI DUDA NO ESTA EN LA LISTA</h3>
+              <p>
+                <b>Contactate con nosotros.</b><br /><br />
+                (011) 30504515<br />
+                codingsolutionsarg@gmail.com
+              </p>
+              <button id="botonCerrarModal2">
+                <img src="./media/icons/volver.svg" alt="" />
+              </button>
+            </div>
+          </dialog>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="social-media">
+          <div class="social-icons">
+            <h3>Redes Sociales</h3>
+            <a href="#"><img src="./media/icons/whatsApp.svg" alt="Facebook" /></a>
+            <a href="#"><img src="./media/icons/instagram.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="payment-icons">
+            <h3>Metodos de pago</h3>
+            <a href="#"><img src="./media/icons/american.svg" alt="visa" /></a>
+            <a href="#"><img src="./media/icons/visa.svg" alt="visa" /></a>
+            <a href="#"><img src="./media/icons/mastercard.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer-info infoDesktop">
+          <p>Dirección: Buenos Aires, Argentina</p>
+          <p>Teléfono: (+54) 11-3050-4515</p>
+          <p>Email: codingsolutionsarg@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-info infoMobile">
+      <p>Dirección:Buenos Aires, Argentina</p>
+      <p>Teléfono: (+54) 11-3050-4515</p>
+      <p>Email: codingsolutionsarg@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/nav.js"></script>
+  <script src="./scripts/sticky.js"></script>
+  <script src="./scripts/diaDeHoy.js"></script>
+  <script src="./scripts/dialog.js"></script>
+  <script src="./scripts/scrollCards.js"></script>
+</body>
+
 </html>
