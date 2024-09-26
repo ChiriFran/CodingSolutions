@@ -4,32 +4,42 @@ let botonAbrirModal = document.getElementById('botonAbrirModal');
 let botonAbrirModalNav = document.getElementById('botonAbrirModalNav');
 
 let botonCerrarModal = document.getElementById('botonCerrarModal');
-let botonCerrarModal2 = document.getElementById('botonCerrarModal2');
 
-botonAbrirModal.addEventListener('click', () => {
+// Función para mostrar el modal con animación
+function abrirModal() {
+    modal.classList.remove('hiding');
+    modal.classList.add('showing');
     modal.showModal();
-})
+}
 
-botonAbrirModalNav.addEventListener('click', () => {
-    modal.showModal();
-})
+// Función para cerrar el modal con animación
+function cerrarModal() {
+    modal.classList.remove('showing');
+    modal.classList.add('hiding');
+    setTimeout(() => modal.close(), 600);  // Espera a que termine la animación antes de cerrar
+}
 
-botonCerrarModal.addEventListener('click', () => {
-    modal.close();
-})
+// Evento para abrir modal al hacer clic en los botones correspondientes
+botonAbrirModal.addEventListener('click', abrirModal);
+botonAbrirModalNav.addEventListener('click', abrirModal);
 
-botonCerrarModal2.addEventListener('click', () => {
-    modal.close();
-})
+// Eventos para cerrar modal al hacer clic en los botones de cierre
+botonCerrarModal.addEventListener('click', cerrarModal);
 
+// Evento para cerrar modal haciendo clic fuera de él
 modal.addEventListener('click', e => {
-    const dialogDimensions = modal.getBoundingClientRect()
-    if (
-        e.clientX < dialogDimensions.left ||
-        e.clientX > dialogDimensions.right ||
-        e.clientY < dialogDimensions.top ||
-        e.clientY > dialogDimensions.bottom
-    ) {
-        modal.close()
+    const dialogDimensions = modal.getBoundingClientRect();
+    const isClickOutside = e.clientX < dialogDimensions.left || 
+                           e.clientX > dialogDimensions.right || 
+                           e.clientY < dialogDimensions.top || 
+                           e.clientY > dialogDimensions.bottom;
+    
+    if (isClickOutside) {
+        cerrarModal();  // Primero dispara la animación de cierre
     }
-})
+});
+
+// Evitar que el clic dentro del modal cierre el modal
+document.getElementById('modal').addEventListener('click', e => {
+    e.stopPropagation();  // Detiene la propagación del evento para evitar el cierre al hacer clic dentro del modal
+});
