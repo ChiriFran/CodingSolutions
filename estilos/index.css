@@ -868,9 +868,9 @@ body {
 #nuestrosProyectos {
   display: flex;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 6%;
   height: 100%;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
@@ -880,7 +880,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  width: 50%;
+  width: 45%;
   height: 300px;
   background-color: rgba(4, 0, 248, 0.093);
   color: var(--colorBase);
@@ -888,7 +888,7 @@ body {
   overflow: hidden;
 }
 
-.proyectosItem a{
+.proyectosItem a {
   text-decoration: none;
   color: var(--colorBase);
   width: 100%;
@@ -908,12 +908,21 @@ body {
   z-index: -10;
 }
 
-.proyectosItem:nth-of-type(1)::after{
+.proyectosItem:nth-of-type(1)::after {
   background-image: url(../media/img/cards/soLinkeding.png);
 }
 
-.proyectosItem:nth-of-type(2)::after{
+.proyectosItem:nth-of-type(2)::after {
+  background-image: url(../media/img/cards/ananda-desktop.png);
+}
+
+.proyectosItem:nth-of-type(3)::after {
   background-image: url(../media/img/cards/barberia.png);
+}
+
+
+.proyectosItem:nth-of-type(4)::after {
+  background-image: url(../media/img/cards/carlaDeco.png);
 }
 
 .cardContent {
@@ -933,17 +942,17 @@ body {
   transform: translateX(5px);
 }
 
-.cardContent h5{
+.cardContent h5 {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.cardContent ul{
+.cardContent ul {
   display: flex;
   flex-flow: row;
 }
 
-.cardContent ul li{
+.cardContent ul li {
   list-style: none;
   padding: 0 5%;
 }
@@ -1131,18 +1140,18 @@ body {
 }
 
 #avisosContainer h3 {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(1rem, 2vw, 1.6rem);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--colorBase);
   background-color: var(--colorFont);
   padding: 1rem 1rem;
+  text-align: center;
 }
 
 /* contacto form */
 #formContacto {
   width: 100%;
-  height: 85vh;
   display: flex;
   flex-flow: row;
   align-items: flex-start;
