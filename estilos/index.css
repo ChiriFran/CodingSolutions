@@ -551,6 +551,8 @@ body {
 
 .div1RightContainer ul li {
   list-style: none;
+  height: 100%;
+  align-content: end;
 }
 
 .div1RightRightContent p {
@@ -869,6 +871,7 @@ body {
   display: flex;
   width: 100%;
   padding: 0 6%;
+  margin: 5% 0;
   height: 100%;
   flex-flow: row wrap;
   align-items: center;
@@ -884,7 +887,9 @@ body {
   height: 300px;
   background-color: rgba(4, 0, 248, 0.093);
   color: var(--colorBase);
-  margin: 5% 8px;
+  margin: 12px;
+  border-radius: 0.5rem;
+  border: 2px solid var(--colorFont);
   overflow: hidden;
 }
 
