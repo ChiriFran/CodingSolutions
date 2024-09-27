@@ -99,8 +99,6 @@ body {
   font-style: italic;
   color: var(--colorBase);
   transition: 0.5s;
-  text-shadow: 5px 6px 2px var(--colorFont);
-
   background: linear-gradient(to left,
       var(--colorBase) 35%,
       rgb(255, 255, 255) 60%,
@@ -865,6 +863,8 @@ body {
 .proyectoTitle {
   text-align: center;
   margin-top: 3rem;
+  font-size: 6rem;
+  opacity: 0.3;
 }
 
 #nuestrosProyectos {
