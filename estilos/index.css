@@ -918,7 +918,7 @@ body {
 }
 
 .proyectosItem:nth-of-type(2)::after {
-  background-image: url(../media/img/cards/ananda-desktop.png);
+  background-image: url(../media/img/lasChavas.png);
 }
 
 .proyectosItem:nth-of-type(3)::after {
